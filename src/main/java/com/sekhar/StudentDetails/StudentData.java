@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package StudentDetails;
+package com.sekhar.StudentDetails;
+
+/**
+ *
+ * @author Batna Chandra Sekhar
+ */
 
 public class StudentData extends Students {
 
@@ -55,3 +60,4 @@ public class StudentData extends Students {
 
     }
 }
+

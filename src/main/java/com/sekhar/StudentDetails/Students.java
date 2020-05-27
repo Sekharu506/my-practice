@@ -3,8 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package StudentDetails;
+package com.sekhar.StudentDetails;
 
+/**
+ *
+ * @author Batna Chandra Sekhar
+ */
 class Students {
 
     private static int count = 0;//to increase student count when a new student object created
