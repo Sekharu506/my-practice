@@ -9,7 +9,7 @@ package com.sekhar.test.accessmodifiers;
  *
  * @author Batna Chandra Sekhar
  */
-class Students {
+class Student {
 
     private static int count = 0;//to increase student count when a new student object created
     private final String dept = "CSE";//all students are belong to Cse department
@@ -19,7 +19,7 @@ class Students {
         System.out.println("Students data");//TO displace about this program before object created
     }
 
-    Students(String n) { //default modifiers assigned to make available wthin the package
+    Student(String n) { //default modifiers assigned to make available wthin the package
         count++;
         this.name = n;
     }

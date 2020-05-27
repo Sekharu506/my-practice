@@ -10,7 +10,7 @@ package com.sekhar.test.accessmodifiers;
  * @author Batna Chandra Sekhar
  */
 
-public class StudentData extends Students {
+public class StudentData extends Student {
 
     public StudentData(String n) {
         super(n);
