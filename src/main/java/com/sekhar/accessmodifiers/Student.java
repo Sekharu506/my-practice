@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sekhar.test.accessmodifiers;
+package com.sekhar.accessmodifiers;
 
 /**s
  *
@@ -12,21 +12,21 @@ package com.sekhar.test.accessmodifiers;
 class Student {
 
     private static int count = 0;//to increase student count when a new student object created
-    private final String dept = "CSE";//all students are belong to Cse department
+    private final String DEPARTMENT = "CSE";//all students are belong to Cse department
     private String name;
 
     static {
-        System.out.println("Students data");//TO displace about this program before object created
+        System.out.println("Students data"+"This is Static block");//TO displace about this program before object created
     }
 
-    Student(String n) { //default modifiers assigned to make available wthin the package
+    Student(String name) { //default modifiers assigned to make available wthin the package
         count++;
-        this.name = n;
+        this.name = name;
     }
 
     void display() {
         System.out.println("   Total Students  " + "Present Student NAME" + "  Branch ");
-        System.out.println("   " + count + "          " + name + "               " + dept);
+        System.out.println("   " + count + "          " + name + "               " +DEPARTMENT);
     }
 
 }
