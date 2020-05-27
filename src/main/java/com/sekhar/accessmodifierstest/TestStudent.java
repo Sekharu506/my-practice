@@ -5,29 +5,47 @@
  */
 package com.sekhar.accessmodifierstest;
 
-import com.sekhar.accessmodifiers.StudentData;
+import com.sekhar.accessmodifiers.Student;
 
 /**
  *
  * @author Batna Chandra Sekhar
  */
+import java.util.Scanner;
+
 public class TestStudent {
 
     public static void main(String a[]) {
-        showAll();
+        Student student1 = createStudent();
+        Student student2 = createStudent();
+
+        System.out.println("GIven Student Data");
+
+        student1.display();
+        student2.display();
+
     }
 
-    private static void showAll() {
-        StudentData student1;
-        StudentData student2;//Two objects Created resulting two students created and increasing count by 2
-        student1 = new StudentData("aravindh");
-        student1.setData("srinagar", "vizag", 6, "second class");
-        student2 = new StudentData("ramu");
-        student2.setData("bommuru", "east godavari", 8, "first class");
+    private static Student createStudent() {
+        Scanner sc = new Scanner(System.in);
+        Student student;
 
-        student1.showData();
-        student2.showData();
+        System.out.println("Enter Student name");
+        String name = sc.next();
+        student = new Student(name);
 
+        System.out.println("Enter town");
+        String town = sc.next();
+        System.out.println("Enter District");
+        String district = sc.next();
+        System.out.println("Enter grade");
+        int grade = sc.nextInt();
+        System.out.println("Enter rank");
+        String rank = sc.next();
+        student.setData(town, district, grade, rank);
+
+        student.display();
+
+        return student;
     }
 }
-

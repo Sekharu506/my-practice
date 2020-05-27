@@ -9,11 +9,8 @@ package com.sekhar.accessmodifiers;
  *
  * @author Batna Chandra Sekhar
  */
-public class StudentData extends Student {
+class StudentData {
 
-    public StudentData(String name) {
-        super(name);
-    }
     Address addressobject;//to make this address object global,i used declared outside meythod
     Score scoreobject;//to make globle
 
@@ -23,7 +20,7 @@ public class StudentData extends Student {
     }
 
     public void showData() {
-        display();
+
         System.out.println();
         System.out.println();
         System.out.println("    Town            District    ");
@@ -39,10 +36,10 @@ public class StudentData extends Student {
         private String town;
         private String district;
 
-        Address(String t, String d) {
+        Address(String town, String district) {
             /*TO make this Constructor accessable within this package */
-            this.town = t;
-            this.district = d;
+            this.town = town;
+            this.district = district;
         }
 
     }
@@ -52,9 +49,9 @@ public class StudentData extends Student {
         protected int grade;
         protected String rank;
 
-        private Score(int g, String r) {
-            this.grade = g;
-            this.rank = r;
+        private Score(int grade, String rank) {//to make this construcor can access within this class only
+            this.grade = grade;
+            this.rank = rank;
         }
     }
 
