@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sekhar.StudentDetails;
+package com.sekhar.test.accessmodifiers;
 
-/**
+/**s
  *
  * @author Batna Chandra Sekhar
  */
